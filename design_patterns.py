@@ -9,6 +9,8 @@ class LiftState:
     pass
   def Stop(self):
     pass
+  def LlightUp(self):
+    pass
 
 # 具體狀態：運行
 class RunState(LiftState):
