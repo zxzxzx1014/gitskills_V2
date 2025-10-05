@@ -9,8 +9,9 @@ class LiftState:
     pass
   def Stop(self):
     pass
-  def LlightUp(self):
+  def LightUp(self):
     pass
+ 
 
 # 具體狀態：運行
 class RunState(LiftState):
@@ -39,9 +40,11 @@ class StopState(LiftState):
   def Close(self):
     print("STOP:Close Forbidden")
     return self
+  
   def Run(self):
     print("STOP:The lift start to run...")
     return RunState()
+  
   def Stop(self):
     print("STOP:The lift is stopped.")
     return self
